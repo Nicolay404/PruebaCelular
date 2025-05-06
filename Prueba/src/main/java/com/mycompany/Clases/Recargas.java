@@ -69,16 +69,22 @@ public class Recargas implements Serializable {
         return saldo;
     }
 
-    public void setSaldo(double saldo) {
-        this.saldo = saldo * (2.0 / 3);
+    public void setSaldo() {
+        this.saldo = valor * (2.0 / 3);
     }
 
     public double getMegas() {
         return megas;
     }
 
-    public void setMegas(double megas) {
-        this.megas = megas * (1.0 / 3) * 5;
+    public void setMegas() {
+        this.megas = valor * (5000.0 / 3);
     }
 
+    @Override
+    public String toString() {
+        return "Recargas{" + "idReca=" + idReca + ", valor=" + valor + ", saldo=" + saldo + ", megas=" + megas + ", celular=" + celular + '}';
+    }
+
+    
 }

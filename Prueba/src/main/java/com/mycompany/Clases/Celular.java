@@ -90,6 +90,11 @@ public class Celular implements Serializable {
     public void setMegas(double Megas) {
         this.Megas = Megas;
     }
+
+    @Override
+    public String toString() {
+        return "Celular{" + "idCel=" + idCel + ", numero=" + numero + ", estado=" + estado + ", saldo=" + saldo + ", Megas=" + Megas + ", cedulaCliente=" + cedulaCliente + '}';
+    }
     
     
 }
